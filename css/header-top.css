@@ -1,0 +1,79 @@
+/* header top */
+
+.header {
+	height: 150px;
+	background-color: #28AADC;
+	width: 100%;
+	clear: left;
+}
+
+.profile {
+	top: 10px;
+	margin-left: 15px;
+	width: 118px;
+	border-radius: 500px;
+	left: 0px;
+}
+
+.profile img {
+	border-radius: 500px;
+}
+
+.header-nav {
+	float: right;
+}
+
+.header_nav ul li {
+	margin-right: 0px;
+}
+
+.profile, .social-media-icons, .me, .header {
+	position: fixed;
+}
+
+.me {
+	margin-left: 100px;
+	top: -18px;
+}
+
+.content {
+	margin-left: 30px;
+}
+
+.social-media-icons {
+	margin-top: 30px;
+	margin-right: 70px;
+	margin-left: 0px;
+	left: 130px;
+	top: 0px;
+}
+
+.about-me-image {
+		margin-top: 160px;
+}
+
+.bubble {
+    position: relative;
+    width: 70px;
+    height: 53px;
+    padding: 0px;
+    background: #797C80;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 36px;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #797C80 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
