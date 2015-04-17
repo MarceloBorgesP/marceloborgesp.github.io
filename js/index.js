@@ -7,28 +7,30 @@ var resize = function () {
 	var header_top = false;
   var windowsize = $(window).width();
 
-  if(windowsize < 600 && header_top == false && $('#header_top').length == 0) {
+  if(windowsize < 600 && header_top == false/* && $('#header_top').length == 0*/) {
         header_top = true;
 
       //load css file to format the header-top
-        var cssLink = $("<link rel='stylesheet' type='text/css' href='css/header-top.css' id='header_top'>");
+        //var cssLink = $("<link rel='stylesheet' type='text/css' href='css/header-top.css' id='header_top'>");
         //$("head").append(cssLink); 
-        $(cssLink).insertAfter( ".last-style-sheet" );
+        //$(cssLink).insertAfter( ".last-style-sheet" );
 
         $('.menu-hamburger').css( "display" , "inherit" );
+        $('.ul-nav').appendTo('.responsive-menu');
 
         $( '.menu-btn' ).click(function(){
     	     $('.responsive-menu').toggleClass('expand');
+           $('.ul-nav').toggleClass('bubble');
     	     });
-
-        $('.ul-nav').appendTo('.responsive-menu');
   }
 
-  else if ($('#header_top').length > 0 && windowsize >= 600) {
+  else if (/*$('#header_top').length > 0 && */windowsize >= 600) {
           $('#header_top').remove();
           header_top = false;
 
           $('.menu-hamburger').css( "display" , "none" );
+          $('.bubble').toggleClass();
+          $('.expand').toggleClass();
 
           $('.ul-nav').appendTo('.header_nav');
   };
@@ -36,7 +38,7 @@ var resize = function () {
 
 $(document).ready(main);
 $(document).ready(resize);
-window.onload = function () {
+/*window.onload = function () {
     $('.menu-hamburger').css( "display" , "inherit" );
 
         $( '.menu-btn' ).click(function(){
@@ -45,5 +47,5 @@ window.onload = function () {
 
         $('.ul-nav').appendTo('.responsive-menu');
 }
-
+*/
 window.onresize = resize;

@@ -69,3 +69,11 @@ a:hover {
 	margin-left: 8%;
 	margin-right: 23.5%;
 }
+
+.carousel-caption {
+	font-family: 'Hind', sans-serif;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
