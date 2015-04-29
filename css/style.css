@@ -59,6 +59,10 @@
 	    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 	}
 
+	.header_nav {
+		display: block;
+	}
+
 	.social-media-icons {
 		margin-left: 27px;
 	}
@@ -153,6 +157,7 @@
 		top: -50px;
 		display: none;
 		float: right;
+		display: none;
 	}
  
 	.expand {
@@ -249,6 +254,10 @@
     	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	}
+
+	.header_nav {
+		display: none;
 	}
 
 	.social-media-icons {
@@ -439,6 +448,8 @@
     	border-radius: 5px;
     	padding-top: 3px;
     	padding-left: 3px;
+    	top: 100px;
+    	right: -27px;
 	}
 
 	.bubble:after {
