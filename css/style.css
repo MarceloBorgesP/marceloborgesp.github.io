@@ -163,9 +163,15 @@
 
 	/* my projects*/
 
+	.all-my-projects {
+		display: inline-block;
+	}
+
 	.my-projects-div {
 		width: 200px;
 		height: 140px;
+		float: left;
+		margin: 10px;
 	}
 
 	.my-projects-div a {
@@ -178,7 +184,7 @@
 	}
 
 	.my-projects-description, .my-projects-description h4 {
-		font-size: 8px;
+		font-size: 12px;
 		text-align: center;
 	}
 }

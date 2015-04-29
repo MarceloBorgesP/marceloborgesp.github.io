@@ -1,5 +1,18 @@
 var main = function () {
 	$(".header").load("header.html");
+
+  $(".my-projects-div").hover(
+  function() {
+    $(this).addClass("animated pulse");
+  }, function() {
+    $(this).removeClass("animated pulse");
+  }
+);
+ 
+$( "li.fade" ).hover(function() {
+  $( this ).fadeOut( 100 );
+  $( this ).fadeIn( 500 );
+});
 };
 
 //checks the width to change the header style
