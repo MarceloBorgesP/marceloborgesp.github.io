@@ -18,6 +18,7 @@
 	.header {
 		width: 300px;
 		height: 100vh;
+		min-height: 400px;
 		padding-right: 32px;
 		padding-left: 32px;
 		padding-top: 25px;
