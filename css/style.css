@@ -2,6 +2,8 @@
 
 @media all and (min-width: 601px) {
     body, html, .container {
+    	height: 100%;
+    	min-height: 100%;
 		margin: 0px;
 		padding: 0px;
 	}
@@ -17,8 +19,8 @@
 
 	.header {
 		width: 300px;
-		height: 100vh;
-		min-height: 400px;
+		height: 100%;
+		min-height: 500px;
 		padding-right: 32px;
 		padding-left: 32px;
 		padding-top: 25px;
