@@ -196,7 +196,7 @@
 
 /* TOP HEADER */
 
-@media only screen and (max-width: 600px), only screen and (max-device-width: 2500px) {
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
 
 	body, html, .container {
 		margin: 0px;
