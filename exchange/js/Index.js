@@ -1,8 +1,6 @@
 var main = function() {
 	//$( ".col-xs-10" ).load("content.html");
 	$(".overlap").hide();
-	//the LIs are sortable
-	$('ul').sortable();
 
 	$( ".col-xs-10" ).load( "countries/ireland.html");
 
