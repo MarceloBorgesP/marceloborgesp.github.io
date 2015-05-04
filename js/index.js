@@ -7,7 +7,6 @@ var main = function () {
     }, function() {
       $(this).removeClass("animated pulse");
     });
-     
 };
 
 
