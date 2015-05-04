@@ -20,12 +20,13 @@
 	.header {
 		width: 300px;
 		height: 100%;
-		min-height: 500px;
+		min-height: 450px;
 		padding-right: 32px;
 		padding-left: 32px;
-		padding-top: 25px;
+		padding-top: 40px;
 		background-color: #28AADC;
 		float: left;
+		box-shadow: 10px 10px 5px #888888; 
 	}
 
 	.content {
@@ -34,15 +35,21 @@
 	}
 
 	.me {
-		margin-left: 40px;
+		margin-left: 20px;
+	}
+
+
+	h3 {
+		font-size: 30px;
 	}
 
 	ul {
-		padding-left: 28px;
+		padding-left: 0px;
 	}
 
 	li {
 		list-style: none;
+		text-align: center;
 	}
 
 	a, h3 {
@@ -67,7 +74,7 @@
 	}
 
 	.social-media-icons {
-		margin-left: 27px;
+		margin-left: 56px;
 	}
 
 	.social-media-list {
@@ -92,7 +99,7 @@
 		color: white;
 		margin-top: 9px;
 		margin-right: 5px;
-		margin-left: 8px;
+		margin-left: 5px;
 		transition: color 0.5s ease;
 	}
 
@@ -115,6 +122,27 @@
 		padding-top: 100px;
 	}
 
+	li a, footer a {
+		font-size: 20px;
+		line-height: 200%;
+	}
+
+	footer {
+		background: #797C80;
+		width: 300px;
+		height: 10%;
+		float: left;
+		left: 0px;
+		bottom: 0px;
+		position: absolute;
+		text-align: center;
+	}
+
+	footer {
+		text-align: center;
+
+	}
+
 	/* about-me */
 
 	.about-me-image img {
@@ -124,6 +152,10 @@
 		min-height: 60px;
     	margin: 0 auto;
     	border-radius: 50px;
+	}
+
+	.story {
+		line-height: 170%;
 	}
 
 	/* hamburger menu */
@@ -216,13 +248,15 @@
 	}
 
 	.header {
-		width: 300px;
-		height: 100vh;
 		padding-right: 32px;
 		padding-left: 32px;
 		padding-top: 25px;
 		background-color: #28AADC;
 		float: left;
+		height: 150px;
+		width: 100%;
+		clear: left;
+		box-shadow: 6px 6px 3px #888888; 
 	}
 
 	.content {
@@ -384,13 +418,6 @@
 	.my-projects-description, .my-projects-description h4 {
 		font-size: 8px;
 		text-align: center;
-	}
-
-	.header {
-		height: 150px;
-		background-color: #28AADC;
-		width: 100%;
-		clear: left;
 	}
 
 	.profile {
