@@ -84,11 +84,11 @@
 		margin: 5px;
 		border-radius: 200px;
 		background-color: #797C80;
-		transition: background-color 1s ease;
+		transition: background-color 1s ease, transform 0.2s ease;
 	}
 
 	.social-media-list:hover {
-		background-color: white;
+		transform: rotateZ(20deg);
 	}
 
 	a:hover {
@@ -100,12 +100,6 @@
 		margin-top: 9px;
 		margin-right: 5px;
 		margin-left: 5px;
-		transition: color 0.5s ease;
-	}
-
-	.social-media-list a:hover {
-		border-radius: 200px;
-		color: #9EA6ED;
 	}
 
 	.profile img, .header_nav {
@@ -122,7 +116,7 @@
 		padding-top: 100px;
 	}
 
-	li a, footer a {
+	li a, a footer {
 		font-size: 20px;
 		line-height: 200%;
 	}
@@ -136,11 +130,7 @@
 		bottom: 0px;
 		position: absolute;
 		text-align: center;
-	}
-
-	footer {
-		text-align: center;
-
+		padding-top: 10px;
 	}
 
 	/* about-me */
@@ -235,6 +225,12 @@
 		font-size: 12px;
 		text-align: center;
 	}
+
+	@media only screen and (max-height: 480px), only screen and (max-device-height: 480px) {
+		footer {
+		top: 450px;
+	}
+	}
 }
 
 /* TOP HEADER */
@@ -316,11 +312,11 @@
 		margin: 5px;
 		border-radius: 200px;
 		background-color: #797C80;
-		transition: background-color 1s ease;
+		transition: background-color 1s ease, transform 0.2s ease;
 	}
-	
+
 	.social-media-list:hover {
-		background-color: white;
+		transform: rotateZ(20deg);
 	}
 
 	a:hover {
@@ -332,12 +328,6 @@
 		margin-top: 9px;
 		margin-right: 5px;
 		margin-left: 8px;
-		transition: color 0.5s ease;
-	}
-
-	.social-media-list a:hover {
-		border-radius: 200px;
-		color: #9EA6ED;
 	}
 
 	.profile img, .header_nav {
@@ -398,9 +388,9 @@
  
 	.menu-btn span {
 		display: block;
-		width: 20px;
+		width: 30px;
 		height: 4px;
-		margin: 4px 0;
+		margin: 6px 0;
 		background: rgb(255,255,255);
 		z-index: 99;
 		border-radius: 20px;
@@ -517,6 +507,28 @@
 
 	/* my projects*/
 	.all-my-projects {
-		margin-top: 170px;
+		display: inline-block;
+		margin-top: 150px;
+	}
+
+	.my-projects-div {
+		width: 200px;
+		height: 140px;
+		float: left;
+		margin: 10px;
+	}
+
+	.my-projects-div a {
+		margin-left: 35px;
+	}
+
+	.my-projects-preview {
+		width: 130px;
+		height: 70px;
+	}
+
+	.my-projects-description, .my-projects-description h4 {
+		font-size: 12px;
+		text-align: center;
 	}
 }
