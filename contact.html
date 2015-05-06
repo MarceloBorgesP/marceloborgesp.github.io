@@ -6,20 +6,60 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="bower_components/paper-elements/paper-elements.html">
+	<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+
 	<title>Contact Me</title>
 </head>
 
-<body>
+<body fullbleed layout vertical>
+<core-header-panel flex>
 	<div class="container">
 		<div class="header"></div>
 
 		<section class="content">
-			<div>
-				<h3>Get in touch with me right now!</h3>
-			</div>
+
+			<div layout vertical>
+				<form>
+					<div>
+						<h3>Contact Me</h3>
+						<p>Get in touch with me right now!</p>
+					</div>
+
+					<div layout horizontal>
+						<paper-input floatingLabel="true" flex label="Your Name"></paper-input>
+						<paper-input floatingLabel="true" flex label="Your Email"></paper-input>
+					</div>
+
+					<div layout horizontal>
+						<paper-input floatingLabel="true" flex label="Your Full Address"></paper-input>
+					</div>
+
+					<div>
+						<h4 layout horizontal flex>Gender </h4>
+						<paper-radio-group selected="male" layout horizontal>
+						  <paper-radio-button name="male" flex label="Male"></paper-radio-button>
+						  <paper-radio-button name="female" flex label="Female"></paper-radio-button>
+						</paper-radio-group>
+					</div>
+
+					
+					<div layout vertical>
+						<paper-input floatingLabel="true" label="Subject"></paper-input>
+						<label layout horizontal><textarea flex placeholder="your text here"></textarea></label>
+					</div>
+
+					<div layout horizontal>
+						<paper-button raised flex>Reset</paper-button>
+						<paper-button raised flex>Submit</paper-button>
+					</div>
+
+				</form>
+			</div>	
 		</section>
 	</div>
-
+</core-header-panel>
 </body>
 
 <script src="js/jquery.min.js"></script>

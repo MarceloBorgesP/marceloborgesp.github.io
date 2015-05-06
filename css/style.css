@@ -52,7 +52,7 @@
 		text-align: center;
 	}
 
-	a, h3 {
+	a, .me h3 {
 		color: white;
 	}
 
@@ -226,6 +226,12 @@
 		text-align: center;
 	}
 
+	/* CONTACT ME*/
+
+	form *:not(textarea) {
+		margin: 10px 30px 10px 30px;
+	}
+
 	@media only screen and (max-height: 480px), only screen and (max-device-height: 480px) {
 		footer {
 		top: 450px;
@@ -280,7 +286,7 @@
 		list-style: none;
 	}
 
-	a, h3 {
+	a, .me h3 {
 		color: white;
 	}
 
@@ -530,5 +536,11 @@
 	.my-projects-description, .my-projects-description h4 {
 		font-size: 12px;
 		text-align: center;
+	}
+
+	/* CONTACT ME*/
+
+	form *:not(textarea) {
+		margin: 10px 30px 10px 30px;
 	}
 }
