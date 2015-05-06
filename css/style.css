@@ -229,7 +229,7 @@
 	/* CONTACT ME*/
 
 	form *:not(textarea) {
-		margin: 10px 30px 10px 30px;
+		margin: 2px 10px 2px 10px;
 	}
 
 	@media only screen and (max-height: 480px), only screen and (max-device-height: 480px) {
