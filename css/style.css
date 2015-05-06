@@ -131,6 +131,7 @@
 		position: absolute;
 		text-align: center;
 		padding-top: 10px;
+		box-shadow: 6px 6px 3px #888888; 
 	}
 
 	/* about-me */
