@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Contact Me</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header"></div>
+
+		<section class="content animated bounceInRight">
+
+			<div>
+				<form action="contact/mail.php" method="post">
+					<div>
+						<h3>Contact Me</h3>
+						<p>Get in touch with me right now!</p>
+					</div>
+
+					<div>
+						<input type="text" name="name" label="Your Name"></input>
+						<input type="email" name="email" label="Your Email"></input>
+					</div>
+
+					<div>
+						<input name="address" label="Your Full Address"></input>
+					</div>
+
+					<div>
+						<h4>Gender </h4>
+						  	<input type="radio" name="sex" value="male">Male<br>
+							<input type="radio" name="sex" value="female">Female
+					</div>
+
+					
+					<div>
+						<input type="text" name="Subject" label="The subject"></input>
+						<label><textarea name="comment" placeholder="your text here"></textarea></label>
+					</div>
+
+					<div>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</div>
+
+				</form>
+			</div>	
+		</section>
+	</div>
+</core-header-panel>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
