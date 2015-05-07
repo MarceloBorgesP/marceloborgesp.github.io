@@ -21,38 +21,17 @@
 		<section class="content animated bounceInRight">
 
 			<div layout vertical>
-				<form>
+				<form action="mail.php" method="post">
 					<div>
 						<h3>Contact Me</h3>
 						<p>Get in touch with me right now!</p>
 					</div>
 
-					<div layout horizontal>
-						<paper-input floatingLabel="true" flex label="Your Name"></paper-input>
-						<paper-input floatingLabel="true" flex label="Your Email"></paper-input>
-					</div>
-
-					<div layout horizontal>
-						<paper-input floatingLabel="true" flex label="Your Full Address"></paper-input>
-					</div>
-
-					<div>
-						<h4 layout horizontal flex>Gender </h4>
-						<paper-radio-group selected="male" layout horizontal>
-						  <paper-radio-button name="male" flex label="Male"></paper-radio-button>
-						  <paper-radio-button name="female" flex label="Female"></paper-radio-button>
-						</paper-radio-group>
-					</div>
-
-					
-					<div layout vertical>
-						<paper-input floatingLabel="true" label="Subject"></paper-input>
-						<label layout horizontal><textarea flex placeholder="your text here"></textarea></label>
-					</div>
-
-					<div layout horizontal>
-						<paper-button raised flex>Reset</paper-button>
-						<paper-button raised flex>Submit</paper-button>
+					Name: <input type="text" name="name"><br>
+					E-mail: <input type="text" name="email"><br>
+					Subject: <input type="text" name="subject"><br>
+					Comment: <textarea type="text" name="comment"></textarea>
+					<input type="submit">
 					</div>
 
 				</form>
