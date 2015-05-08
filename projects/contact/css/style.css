@@ -1,0 +1,11 @@
+.container {
+	margin: 2% 5%;
+}
+
+.container * {
+	margin: 5px 15px 5px 10px;
+}
+
+.description {
+	margin-left: 5%;
+}
