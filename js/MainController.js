@@ -1,6 +1,4 @@
 app.controller('MainController', ['$scope', function($scope) { 
-  $scope.title = 'My Projects Displayed with AngularJS'; 
-  $scope.promo = 'Still Learning';
   $scope.projects=[
       {
         url:'projects/exchange/index.html',
@@ -23,5 +21,5 @@ app.controller('MainController', ['$scope', function($scope) {
         description:'Its the project of a form using webcomponents'
         }
       ]}
-      ]);
+]);
 

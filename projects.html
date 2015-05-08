@@ -2,11 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<script type="text/javascript" src="js/angular.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/MainController.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,54 +9,32 @@
 	<title>My Projects</title>
 </head>
 
-<body>
+<body  ng-app="myApp">
 	<div class="container">
 		<div class="header"></div>
 
 		<div class="content animated bounceInRight">
 			<div class="all-my-projects">
 
-			<div ng-app="myApp">
+			<div ng-controller="MainController">>
 
-				<div class="my-projects-div" ng-repeat="x in projects">
-					<a href="/{{x.url}}" target="_blank"><img class="my-projects-preview" src="/{{x.image}}"></a>
+				<div class="my-projects-div" ng-repeat="project in projects">
+					<a href="/{{project.url}}" target="_blank"><img class="my-projects-preview" src="/{{project.image}}"></a>
 					<div class="my-projects-description">
-						<h4>{{ x.title }}</h4>
-						<p>{{ x.description }}</p>
+						<h4>{{ project.title }}</h4>
+						<p>{{ project.description }}</p>
 					</div>
 				</div>
-
-				
-				
-
 			</div>
-				
-				<!--<div class="my-projects-div">
-					<a href="projects/exchange/index.html" target="_blank"><img class="my-projects-preview" src="images/exchange-preview.png"></a>
-					<div class="my-projects-description">
-						<h4>Pelo mundo</h4>
-						<p>It's a project with many pictures taken during my exchange, I have made use of Carousel (Bootsrap) on it.</p>
-					</div>
-				</div>
-				<div class="my-projects-div">
-					<a href="projects/google-map-voice-search/my-element.html" target="_blank"><img class="my-projects-preview" src="images/voice-search.png"></a>
-					<div class="my-projects-description">
-						<h4>Google Map Voice Search</h4>
-						<p>It's my first work with Web Components. When declared, this component can search for places on the web using voice detection</p>
-					</div>
-				</div>
-				<div class="my-projects-div">
-					<a href="projects/contact/contact.html" target="_blank"><img class="my-projects-preview" src="images/contact.png"></a>
-					<div class="my-projects-description">
-						<h4>"Contact me" Form</h4>
-						<p>It's the project of a form using webcomponents</p>
-					</div>
-				</div>-->
 			</div>
 		</div>
 	</div>
 
-	
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/MainController.js"></script>
 	
 </body>
 </html> 	
