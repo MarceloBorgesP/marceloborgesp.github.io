@@ -9,5 +9,9 @@ var main = function () {
     });
 };
 
+var notworking_error = function () {
+	alert("At the moment this function is still not working, sorry about that!");
+}
+
 
 $(document).ready(main);

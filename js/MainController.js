@@ -19,6 +19,13 @@ app.controller('MainController', ['$scope', function($scope) {
         image:'images/contact.png', 
         title: 'Contact me Form', 
         description:'Its the project of a form using webcomponents'
+        },
+
+        {
+        url:'projects/GuestList/index.html',
+        image:'images/guest-list.png', 
+        title: 'Guest List', 
+        description:'A guest list using local storage and AngularJS'
         }
       ]}
 ]);
