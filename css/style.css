@@ -229,6 +229,10 @@
 
 	/* Contact */
 
+	form {
+		margin: 0 50px;
+	}
+
 	form * {
 		margin-top: 10px;
 	}

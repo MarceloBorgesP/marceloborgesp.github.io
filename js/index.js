@@ -10,7 +10,18 @@ var main = function () {
 };
 
 var notworking_error = function () {
-	alert("At the moment this function is still not working, sorry about that!");
+	var notification = new NotificationFx({
+							message : '<p>This function is still not working, sorry about that!</p>',
+							layout : 'attached',
+							effect : 'bouncyflip',
+							type : 'notice', // notice, warning or error
+							onClose : function() {
+								bttn.disabled = false;
+							}
+						});
+
+						// show the notification
+						notification.show();
 }
 
 
