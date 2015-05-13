@@ -1,6 +1,10 @@
 var main = function () {
   	$(".header").load("header.html");
 
+  	if($('form').length) { 
+  		notworking_error();
+  	} 
+
     $(".my-projects-div").hover(
     function() {
       $(this).addClass("animated pulse");
