@@ -15,13 +15,10 @@ var main = function () {
 
 var notworking_error = function () {
 	var notification = new NotificationFx({
-							message : '<p>This function is still not working, sorry about that!</p>',
+							message : '<p>Github doesnt offer support to PHP, so this function isnt working for now, sorry about that!</p>',
 							layout : 'attached',
 							effect : 'bouncyflip',
 							type : 'notice', // notice, warning or error
-							onClose : function() {
-								bttn.disabled = false;
-							}
 						});
 
 						// show the notification
