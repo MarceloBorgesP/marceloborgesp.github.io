@@ -241,6 +241,10 @@
 		margin-right: 20px;
 	}
 
+	#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8 {
+		visibility: hidden;
+	}
+	
 	@media only screen and (max-height: 480px), only screen and (max-device-height: 480px) {
 		footer {
 		top: 450px;
