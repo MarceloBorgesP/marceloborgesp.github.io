@@ -1,8 +1,10 @@
 body, html, .wrapper {
     	height: 100%;
     	min-height: 100%;
+    	width: 100%;
 		margin: 0px;
 		padding: 0px;
+		overflow-x: hidden;
 		font-family: 'Poiret One', cursive;
 }
 
@@ -48,18 +50,6 @@ a:hover {
 	transition: border 0.3s ease-in-out;
 }
 
-#facebook, #linkedin, #twitter, #instagram, #google, #flickr, #pinterest {
-	-webkit-transition: background 0.3s ease-in-out;
-	-moz-transition: background 0.3s ease-in-out;
-	-ms-transition: background 0.3s ease-in-out;
-	-o-transition: background 0.3s ease-in-out;
-	transition: background 0.3s ease-in-out;
-}
-
-#facebook:hover, #linkedin:hover, #twitter:hover, #instagram:hover, #google:hover, #flickr:hover, #pinterest:hover {
-	background-color: #E6F911;
-}
-
 .li-header:hover {
 	border-color: #E6F911;
 	border-bottom-width: 6px;
@@ -79,6 +69,20 @@ a:hover {
 	font-size: 1.6em;
 	font-weight	: 900;
 	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
+}
+
+#hamburger-menu {
+	z-index: 9999;
+	position: relative;
+	float: right;
+	right: 0px;
+	padding: 30px 15px 0 0;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+button {
+	background-color: rgba(231,237,54,0.1);
 }
 
 /* Início*/
@@ -110,14 +114,15 @@ a:hover {
 	background-image: url("images/coffee.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-}
-
-#coffee > * {
 	color: #FFFFFF;
-	font-size: 1.5em;
 }
 
-#coffee > h2 {
+#coffee > *, #office > * {
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+#coffee > h2, #office > h2 {
 	font-size: 3em;
 }
 
@@ -133,7 +138,7 @@ footer {
     background-color: #494343;
     position: relative;
     bottom: 0px;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 5px;
     color: #FFFFFF;
 	font-size: 0.9em;
 	font-weight	: 900;
@@ -141,8 +146,9 @@ footer {
 }
 
 .div-contact {
-	float: left;
 	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 
 .div-contact ul {
@@ -196,6 +202,18 @@ h2 {
 	background-color: #CD2129;
 }
 
+#facebook, #linkedin, #twitter, #instagram, #google, #flickr, #pinterest {
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+#facebook:hover, #linkedin:hover, #twitter:hover, #instagram:hover, #google:hover, #flickr:hover, #pinterest:hover {
+	background-color: #E6F911;
+}
+
 .bx-wrapper .bx-viewport 
 {
     -moz-box-shadow: 0;
@@ -204,4 +222,36 @@ h2 {
     border: 0;
     left: 0;
     background: #fff;
+}
+
+@media only screen and (max-width: 1050px), only screen and (max-device-width: 1050px) {
+	header {
+		height: 0px;
+	}
+
+	nav>ul {
+		height: 130px;
+		display: block;
+		float: right;
+		margin: 0;
+	}
+
+	.li-header {
+		float: none;
+		padding: 20px 0;
+		height: 0;
+		width: 200px;
+	}
+}
+	
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+	footer {
+		height: 500px;
+	}
+
+@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
+	footer {
+		height: 600px;
+	}
 }

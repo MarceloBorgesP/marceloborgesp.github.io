@@ -15,8 +15,11 @@
 
 	<title>Octo</title>
 </head>
-<body>
+<body onload="resize()">
 	<div class="wrapper">
+		<div id="hamburger-menu">
+			<button class="fa fa-bars fa-4x"></button>
+		</div>
 		<header class="animated fadeInDown"></header>
 	
 		<div class="content">
@@ -27,10 +30,10 @@
 						<ul>
 							<li><span class="fa fa-newspaper-o fa-lg"></span>   Mídia Impressa e Digital</li>
 							<li><span class="fa fa-wrench fa-lg"></span>   Desenvolvimento de Lojas Virtuais</li>
-							<li>Assessoria e Planejamento</li>
-							<li>Anúncios e Campanhas</li>
-							<li>Programação Visual</li>
-							<li>Teatro Empresarial</li>
+							<li><span class="fa fa-line-chart fa-lg"></span>   Assessoria e Planejamento</li>
+							<li><span class="fa fa-bullhorn fa-lg"></span>   Anúncios e Campanhas</li>
+							<li><span class="fa fa-lightbulb-o fa-lg"></span>   Programação Visual</li>
+							<li><span class="fa fa-users fa-lg"></span>   Teatro Empresarial</li>
 						</ul>
 					</div>
 					</li>
@@ -50,5 +53,6 @@
 </body>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/resize.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 </html>
