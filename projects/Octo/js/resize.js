@@ -1,17 +1,21 @@
 //checks the width to change the header style
 var resize = function () {
+
   var windowsize = $(window).width();
   var header = false;
 
   if(windowsize < 1050) {
 
         $('#menu-hamburger').css( "display" , "inherit" );
-        $('#menu').css( "display" , "none" );
-        $('header').css( "height" , "0" );
+         $('#menu').css( "display" , "none" );
+         $('header').css( "height" , "0" );
+        // $('.li-header').remove();
+        // $('#menu').detach();
 
         $( 'button' ).click(function(){
           if(header == false) {
             $('#menu').css( "display" , "inherit" );
+            $('.li-header').css( "display" , "inherit" );
             $('header').css( "height" , "200" );
             header = true;
           }

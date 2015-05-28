@@ -15,12 +15,6 @@ header {
     background-color: #494343;
 }
 
-.li-header {
-	padding: 30px 0 0 0;
-	height: 130px;
-	width: 160px;
-}
-
 nav>ul {
 	display: inline-block;
 	float: right;
@@ -44,6 +38,16 @@ a:hover {
 }
 
 .li-header {
+	background-color: 	#665D5D;
+	padding: 30px 0 0 0;
+	height: 130px;
+	width: 160px;
+	border-color: #494343;
+	border-left-width: 1px;
+	border-right: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-style: solid;
 	-webkit-transition: border 0.3s ease-in-out;
 	-moz-transition: border 0.3s ease-in-out;
 	-ms-transition: border 0.3s ease-in-out;
@@ -54,10 +58,8 @@ a:hover {
 .li-header:hover {
 	border-color: #E6F911;
 	border-bottom-width: 6px;
-	border-right: 0px;
-	border-left: 0px;
-	border-top: 0px;
 	border-style: solid;
+	border-left-color: #494343;
 	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
 }
 
@@ -75,10 +77,10 @@ a:hover {
 
 #hamburger-menu {
 	z-index: 9999;
-	position: relative;
+	position: absolute;
 	float: right;
 	right: 0px;
-	padding: 30px 15px 0 0;
+	padding: 30px 30px 0 0;
 	color: #FFFFFF;
 	cursor: pointer;
 }
@@ -88,6 +90,10 @@ button {
 }
 
 /* Início*/
+
+.wrapper {
+	background-image: url("images/background.jpg");
+}
 
 .content {
 	min-height: 100%;
@@ -146,6 +152,17 @@ div>span {
 
 /* portfolio */
 
+/*#h2-portfolio {
+	background-color: #DBBEBE;
+	margin-right: 0px;
+	margin-left: 0px;
+	border-right-width: 10px;
+	border-left-width: 10px;
+	border-color: #DBBEBE;
+	border-style: solid;
+	padding: 5px 0 5px 0;
+}
+*/
 figure {
 	width: 304px;
 	height: 300px;
@@ -280,6 +297,12 @@ h2 {
 @media only screen and (max-width: 1050px), only screen and (max-device-width: 1050px) {
 	header {
 		height: 0px;
+	    width: 200px;
+	    height: 80%;
+	    float: left;
+	    position: fixed;
+	    z-index: 99999;
+	    background-color: transparent;
 	}
 
 	nav>ul {
@@ -292,8 +315,9 @@ h2 {
 	.li-header {
 		float: none;
 		padding: 20px 0;
-		height: 0;
+		height: 100px;
 		width: 200px;
+		display: none;
 	}
 }
 	
