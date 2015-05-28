@@ -58,6 +58,7 @@ a:hover {
 	border-left: 0px;
 	border-top: 0px;
 	border-style: solid;
+	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
 }
 
 .a-social-media, .a-header {
@@ -67,10 +68,10 @@ a:hover {
 
 .a-header {
 	height: 100px;
-	font-size: 1.6em;
+	font-size: 2em;
 	font-weight	: 900;
-	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
-}
+/*	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
+*/}
 
 #hamburger-menu {
 	z-index: 9999;
@@ -90,12 +91,11 @@ button {
 
 .content {
 	min-height: 100%;
-	padding-top: 30px;
 }
 
 .div-content {
-	height: 450px;
-	padding: 30px 20% 10px 20%;
+	height: 470px;
+	padding: 30px 12% 10px 12%;
 }
 
 .div-content * {
@@ -111,6 +111,8 @@ button {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.56);
+	line-height: 30px;
+	color: #000000;
 }
 
 #coffee {
@@ -124,13 +126,20 @@ button {
 #coffee > *, #office > * {
 	font-size: 1.5em;
 	font-weight: 900;
+	text-align: center;
 }
 
 #coffee > h2, #office > h2 {
 	font-size: 3em;
 }
 
-li>span {
+.services {
+	float: left;
+	width: 300px;
+	height: 100px;
+}
+
+div>span {
 	color: yellow;
 }
 
@@ -138,17 +147,40 @@ li>span {
 
 figure {
 	width: 304px;
-	height: 350px;
+	height: 300px;
 	text-align: center;
 	float: left;
-	color: #ccc;
+	margin: 0 5px;
+}
+
+img {
+	box-shadow: 10px 10px 5px #888888; 
+}
+
+#overlay span {
+    background: red;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#overlay:hover span { opacity: 0.5; }
+
+figcaption {
+	color: #000000;
+	text-shadow: 10px 10px 5px #888888;
 }
 
 /* footer */
 
 footer {
 	width: 100%;
-	height: 250px;
+	height: 330px;
     background-color: #494343;
     position: relative;
     bottom: 0px;
@@ -177,6 +209,7 @@ footer {
 h2 {
 	text-align: center;
 	font-size: 3em;
+	margin-bottom: 60px;
 }
 
 #facebook {
@@ -258,11 +291,22 @@ h2 {
 
 @media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
 	footer {
-		height: 500px;
+		height: 560px;
 	}
+
+	.services {
+	width: 150px;
+	height: 100px;
+	}
+
+}
 
 @media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
 	footer {
+		height: 660px;
+	}
+
+	.div-content {
 		height: 600px;
 	}
 }
