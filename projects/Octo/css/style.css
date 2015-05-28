@@ -59,6 +59,29 @@ a:hover {
 	transition: border 0.3s ease-in-out;
 }
 
+.close-menu {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+/*.quem-somos {
+	top: 60px;
+	width: 40px;
+    display: block;
+    position: relative;
+    z-index: 50;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #847f7f;
+}
+
+.quem-somos li {
+	height: 40px;
+}*/
+
 .li-header:hover {
 	border-color: #E6F911;
 	border-bottom-width: 6px;
@@ -191,7 +214,7 @@ figure {
 	height: 228px;
 	text-align: center;
 	float: left;
-	margin: 5px;
+	margin:15px;
 }
 
 img {
@@ -207,6 +230,7 @@ img {
     opacity: 0;
     position: relative;
     z-index: 1;
+    padding-top: 80px;
     -webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
 	-ms-transition: opacity 0.3s ease-in-out;
@@ -222,10 +246,6 @@ img {
 	padding-top: 5px;
 	font-weight: 900;
 	font-size: 2em;		
-}
-
-.span-hover {
-	padding-top: 80px;
 }
 
 /*figcaption {
@@ -351,10 +371,17 @@ h2 {
 
 	.li-header {
 		float: none;
-		padding: 20px 0;
+		padding: 20px 0 10px 10px;
 		height: 100px;
 		width: 200px;
 		display: none;
+		background-color: #261e1e;
+		text-align: left;
+	}
+
+	.close-menu {
+		color: #FFFFFF;
+		display: inherit;
 	}
 
 	@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
