@@ -1,14 +1,23 @@
+<script type="text/javascript">
+	var count = 0;
+    $("#arrow").click(function() {
+    	if(count==0) {
+    		$("#li-quem-somos").append("<ul class='quem-somos animated fadeIn'><li><a href='quem-somos.html#missao'>Missão</a></li><li><a href='quem-somos.html#visao'>Visão</a></li><li><a href='quem-somos.html#valores'>Valores</a></li> </ul>");
+    		count = 1;
+    	} else {
+    		$(".quem-somos").remove();
+    		count = 0;
+    	}
+    });
+
+</script>
+
 <div id="menu">
 	<nav>
 		<ul>
 			<li class="animated fadeInDown li-header"><a class="a-header" href="index.html">Início</a><span class="fa fa-times fa-2x close-menu"></span></li>
 			<li class="animated fadeInDown li-header"><a class="a-header" href="portfolio.html">Portfólio</a></li>
-			<li class="animated fadeInDown li-header"><a class="a-header" href="quem-somos.html">Quem Somos</a>
-				<!-- <ul class="quem-somos">
-					<li>Missão</li>
-					<li>Visão</li>
-					<li>Valores</li>
-				</ul> -->
+			<li id="li-quem-somos" class="animated fadeInDown li-header"><a class="a-header" href="quem-somos.html">Quem Somos </a><button id="arrow" class="fa fa-caret-square-o-down fa-2x"></button>
 			</li>
 			<li class="animated fadeInDown li-header"><a class="a-header" href="#contact">Contato</a></li>
 		</ul>

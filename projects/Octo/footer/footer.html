@@ -1,16 +1,30 @@
+
+<script type="text/javascript">
+	function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-22.223038, -45.921424),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 <div class="row">
 <a name="contact"></a>
 				<h2>Pra entrar em contato conosco é fácil</h2>
-				<div class="div-contact col-md-4 col-sm-4 col-lg-4">
+				<div class="div-contact col-sm-4 col-xs-12">
 					<h3>Nosso Contato</h3>
 					<p>Rua João Messias Pereira, 1003 - C. dos Mulatos, Estiva - MG</p>
 					<p>borgespereira.marcelo@gmail.com</p>
 					<p>(35) 9749-4215</p>
 				</div>
 
-				<div class="div-contact col-md-3 col-sm-3 col-lg-3"><div id="map-canvas"></div></div>
+				<div class="div-contact col-sm-4 col-xs-12"><div id="map-canvas"></div></div>
 
-				<div class="div-contact col-md-4 col-sm-4 col-lg-4">
+				<div class="div-contact col-sm-4 col-xs-12">
 					<h3>Redes Sociais</h3>
 					<ul>
 						<li class="li-footer" id="facebook"><a href="" target="_blank" class="a-social-media fa fa-facebook fa-2x"></a></li>

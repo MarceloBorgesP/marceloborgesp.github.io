@@ -67,22 +67,7 @@ a:hover {
 	cursor: pointer;
 }
 
-/*.quem-somos {
-	top: 60px;
-	width: 40px;
-    display: block;
-    position: relative;
-    z-index: 50;
-    font-size: 1.2em;
-    color: #FFFFFF;
-    background-color: #847f7f;
-}
-
-.quem-somos li {
-	height: 40px;
-}*/
-
-.li-header:hover {
+.li-header:hover:not(#li-quem-somos) {
 	border-color: #E6F911;
 	border-bottom-width: 6px;
 	border-style: solid;
@@ -90,7 +75,32 @@ a:hover {
 	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
 }
 
-.a-social-media, .a-header {
+.quem-somos {
+	display: none;
+}
+
+.quem-somos {
+	display: block;
+	top: 30px;
+	position: relative;
+	background-color: 	#665D5D;
+	height: 120px;
+	width: 160px;
+	padding: 0;
+	border: 0;
+	border-bottom-width: 6px;
+	border-style: solid;
+	border-color: #E6F911;
+	z-index: 99999;
+}
+
+.quem-somos li{
+	height: 40px;
+	font-size: 1.4em;
+	padding: 0;
+}
+
+a, #arrow {
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -122,11 +132,11 @@ button {
 }
 
 .description {
-	height: 100px;
+	padding-top: 30px;
+	height: 140px;
 }
 
 h1 {
-	width: 100%;
 	height: 40px;
 	text-align: center;
 	font-size: 3em;
@@ -219,21 +229,37 @@ img {
     position: relative;
     z-index: 1;
     padding-top: 50px;
-    -webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-ms-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 }
 
 #overlay:hover .span-hover { 
-	opacity: 0.5; 
+	opacity: 0.9; 
 }
 
 .span-hover p {
 	padding-top: 5px;
 	font-weight: 900;
 	font-size: 1em;		
+}
+
+.span-hover p, .span-hover span {
+	bottom: 100px;
+	position: relative;	
+	opacity: 0;
+	-webkit-transition: opacity, bottom 0.5s ease-in-out;
+	-moz-transition: opacity, bottom 0.5s ease-in-out;
+	-ms-transition: opacity, bottom 0.5s ease-in-out;
+	-o-transition: opacity, bottom 0.5s ease-in-out;
+	transition: opacity, bottom 0.5s ease-in-out;
+}
+
+#overlay:hover .span-hover p, #overlay:hover .span-hover span {
+	bottom: 0px;
+	opacity: 1;	
 }
 
 /* footer */
@@ -255,7 +281,7 @@ footer {
 .div-contact {
 	text-align: center;
 	margin: 0px;
-	padding: 0px;
+	padding: 0 10px;
 }
 
 .div-contact>p {
@@ -324,6 +350,10 @@ h2 {
 	background-color: #E6F911;
 }
 
+#content-index {
+	margin: 0 20px;
+}
+
 .bx-wrapper .bx-viewport 
 {
     -moz-box-shadow: 0;
@@ -362,6 +392,13 @@ h2 {
 		text-align: left;
 	}
 
+	.quem-somos {
+		top: -30px;
+		right: -189px;
+		position: relative;
+		text-align: center;
+	}
+
 	.close-menu {
 		color: #FFFFFF;
 		display: inherit;
@@ -377,53 +414,45 @@ h2 {
 		font-size: 1.4em;		
 	}
 
-	@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+	@media only screen and (max-width: 805px), only screen and (max-device-width: 805px) {
 		footer {
-			height: 560px;
+			height: 600px;
 		}
 
-		@media only screen and (max-width: 683px), only screen and (max-device-width: 683px) {
-			footer {
-			height: 590px;
+		#content-index {
+				margin: 0;
+		}
+			
+		@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+			.description h1 {
+				height: 80px;
 			}
 
-			@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
-				.description h1 {
-					height: 80px;
-				}
-
-				.description {
-					height: 140px;
-				}
-
-				@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
-					footer {
-						height: 690px;
-					}
-
-					.div-content {
-						height: 570px;
-					}
-
-					#overlay .span-hover {
-				    padding-top: 50px;
-					}
-
-
-					.span-hover p {
-						padding-top: 5px;
-						font-size: 1em;		
-					}	
-
-					/*@media only screen and (max-width: 395px), only screen and (max-device-width: 395px) {
-
-						.div-content {
-							height: 570px;
-						}
-					}*/
-				}
+			.description {
+				height: 180px;
 			}
-		}		
+
+			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
+				footer {
+					height: 710px;
+				}
+
+				.div-content {
+					height: 570px;
+				}
+
+				#overlay .span-hover {
+			    padding-top: 40px;
+				}
+
+
+				.span-hover p {
+					padding-top: 5px;
+					font-size: 1em;		
+				}	
+			}
+		}
+				
 	}
 }
 	

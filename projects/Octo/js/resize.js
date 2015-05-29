@@ -8,14 +8,14 @@ var resize = function () {
       $('figure').css( "width" , (-margin+windowsize)/widthsize );
       $('figure').css( "height" , (-margin+windowsize)/heightsize );
       $('.span-hover').css( "width" , (-margin+windowsize)/widthsize );
-      $('.span-hover').css( "height" , (-margin+windowsize)/heightsize );
+      $('.span-hover').css( "height" , 1+(-margin+windowsize)/heightsize );
       $('.span-hover').css( "top" , -((-margin+windowsize)/heightsize) );
       $('img').css( "width" , (-margin+windowsize)/widthsize );
       $('img').css( "height" , (-margin+windowsize)/heightsize );
   };
 
   if (windowsize >= 1200) {
-    portfolioSize(130, 6 ,7.5);
+    portfolioSize(140, 6 ,7.5);
   }
 
   else if (windowsize >= 992) {
@@ -27,7 +27,7 @@ var resize = function () {
   }
 
   else {
-    portfolioSize(10, 2.4 ,3);
+    portfolioSize(20, 2.4 ,3);
   }
 
 
