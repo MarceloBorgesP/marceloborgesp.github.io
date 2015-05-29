@@ -4,13 +4,32 @@ var resize = function () {
   var windowsize = $(window).width();
   var header = false;
 
-  $('figure').css( "width" , (90+windowsize)/5 );
-  $('figure').css( "height" , (90+windowsize)/6.25 );
-  $('.span-hover').css( "width" , (90+windowsize)/5 );
-  $('.span-hover').css( "height" , (90+windowsize)/6.25 );
-  $('.span-hover').css( "top" , -((90+windowsize)/6.25) );
-  $('img').css( "width" , (90+windowsize)/5 );
-  $('img').css( "height" , (90+windowsize)/6.25 );
+  var portfolioSize = function (margin, widthsize, heightsize) {
+      $('figure').css( "width" , (-margin+windowsize)/widthsize );
+      $('figure').css( "height" , (-margin+windowsize)/heightsize );
+      $('.span-hover').css( "width" , (-margin+windowsize)/widthsize );
+      $('.span-hover').css( "height" , (-margin+windowsize)/heightsize );
+      $('.span-hover').css( "top" , -((-margin+windowsize)/heightsize) );
+      $('img').css( "width" , (-margin+windowsize)/widthsize );
+      $('img').css( "height" , (-margin+windowsize)/heightsize );
+  };
+
+  if (windowsize >= 1200) {
+    portfolioSize(130, 6 ,7.5);
+  }
+
+  else if (windowsize >= 992) {
+    portfolioSize(110, 4 ,5);
+  }
+
+  else if (windowsize >= 768) {
+    portfolioSize(90, 3 ,3.75);
+  }
+
+  else {
+    portfolioSize(10, 2.4 ,3);
+  }
+
 
   if(windowsize < 1050) {
 
