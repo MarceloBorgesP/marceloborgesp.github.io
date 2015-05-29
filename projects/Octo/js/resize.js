@@ -36,30 +36,26 @@ var resize = function () {
         $('#menu-hamburger').css( "display" , "inherit" );
          $('#menu').css( "display" , "none" );
          $('header').css( "height" , "0" );
-        // $('.li-header').remove();
-        // $('#menu').detach();
 
         $( 'button' ).click(function(){
           if(header == false) {
             $('#menu').css( "display" , "inherit" );
             $('.li-header').css( "display" , "inherit" );
             $('header').css( "height" , "200" );
+            $('button').removeClass('fa-bars');
+            $('button').addClass('fa-times');
+
             header = true;
           }
 
           else if(header == true) {
             $('#menu').css( "display" , "none" );
             $('header').css( "height" , "0" );
+            $('button').addClass('fa-bars');
+            $('button').removeClass('fa-times');
             header = false;
           }     
     	     });
-
-        $( '.close-menu' ).click(function(){
-            $('#menu').css( "display" , "none" );
-            $('.li-header').css( "display" , "none" );
-            $('header').css( "height" , "0" );
-            header = false;
-          });
   }
 
   else if (windowsize >= 1050) {

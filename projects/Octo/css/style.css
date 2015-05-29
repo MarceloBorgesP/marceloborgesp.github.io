@@ -59,15 +59,7 @@ a:hover {
 	transition: border 0.3s ease-in-out;
 }
 
-.close-menu {
-	display: none;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	cursor: pointer;
-}
-
-.li-header:hover:not(#li-quem-somos) {
+.li-header:hover {
 	border-color: #E6F911;
 	border-bottom-width: 6px;
 	border-style: solid;
@@ -87,17 +79,16 @@ a:hover {
 	height: 120px;
 	width: 160px;
 	padding: 0;
-	border: 0;
-	border-bottom-width: 6px;
-	border-style: solid;
-	border-color: #E6F911;
-	z-index: 99999;
 }
 
 .quem-somos li{
 	height: 40px;
 	font-size: 1.4em;
 	padding: 0;
+}
+
+.quem-somos li:hover {
+	background-color: #C242F4;
 }
 
 a, #arrow {
@@ -168,6 +159,11 @@ hr {
 .div-content>ul {
 	text-align: center;
 }
+
+#content-index {
+	margin: 0 20px;
+}
+
 
 #office {
 	background-image: url("images/office.jpg");
@@ -350,10 +346,6 @@ h2 {
 	background-color: #E6F911;
 }
 
-#content-index {
-	margin: 0 20px;
-}
-
 .bx-wrapper .bx-viewport 
 {
     -moz-box-shadow: 0;
@@ -392,16 +384,15 @@ h2 {
 	}
 
 	.quem-somos {
-		top: -30px;
+		top: -33px;
 		right: -189px;
 		position: relative;
 		text-align: center;
 	}
 
-	.close-menu {
-		color: #FFFFFF;
-		display: inherit;
-	}	
+	.quem-somos li {
+		padding-top: 10px;
+	}
 
 	#overlay .span-hover {
     padding-top: 50px;
@@ -425,17 +416,22 @@ h2 {
 			height: 600px;
 		}
 
+		.description h1 {
+				font-size: 2.5em;
+			}
+
 		#content-index {
 				margin: 0;
 		}
 			
 		@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
 			.description h1 {
-				height: 80px;
+				font-size: 2em;
 			}
 
 			.description {
-				height: 180px;
+				padding-top: 0;
+				height: 100px;
 			}
 
 			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
