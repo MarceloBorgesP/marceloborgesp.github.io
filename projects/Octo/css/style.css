@@ -365,8 +365,7 @@ h2 {
 }
 
 @media only screen and (max-width: 1050px), only screen and (max-device-width: 1050px) {
-	header {
-		height: 0px;
+	header {	
 	    width: 200px;
 	    height: 80%;
 	    float: left;
@@ -412,6 +411,13 @@ h2 {
 	.span-hover p {
 		padding-top: 5px;
 		font-size: 1.4em;		
+	}
+
+	@media only screen and (max-height: 365px), only screen and (max-device-height: 365px) {
+		.li-header {
+			padding: 10px 0 5px 10px;
+			height: 60px;
+		}
 	}
 
 	@media only screen and (max-width: 805px), only screen and (max-device-width: 805px) {
