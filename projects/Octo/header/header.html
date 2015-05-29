@@ -10,6 +10,14 @@
     	}
     });
 
+    $("#a-contato").click(function () {
+            $('#menu').css( "display" , "none" );
+            $('header').css( "height" , "0" );
+            $('button').addClass('fa-bars');
+            $('button').removeClass('fa-times');
+            header = false;
+        });
+
 </script>
 
 <div id="menu">
@@ -19,7 +27,7 @@
 			<li class="animated fadeInDown li-header"><a class="a-header" href="portfolio.html">Portfólio</a></li>
 			<li id="li-quem-somos" class="animated fadeInDown li-header"><a class="a-header" href="quem-somos.html">Quem Somos </a><button id="arrow" class="fa fa-caret-square-o-down fa-2x"></button>
 			</li>
-			<li class="animated fadeInDown li-header"><a class="a-header" href="#contact">Contato</a></li>
+			<li class="animated fadeInDown li-header"><a id="a-contato" class="a-header" href="#contact">Contato</a></li>
 		</ul>
 	</nav>
 </div>

@@ -35,7 +35,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.li-header, .li-footer {
+.li-header {
 	float: left;
 	list-style: none;
 	text-align: center;
@@ -284,12 +284,18 @@ footer {
 	font-weight: normal;
 }
 
+.div-contact>ul {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
 .li-footer {
 	height: 40px;
 	width: 40px;
 	margin: 5px 5px;
 	padding-top: 10px;
 	border-radius: 5px;
+	display: inline-block;
 }
 
 h2 {
