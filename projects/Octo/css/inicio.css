@@ -1,0 +1,54 @@
+/* Início*/
+
+.div-content {
+	height: 570px;
+	padding: 30px 5% 10px 5%;
+}
+
+.div-content * {
+	font-weight: bold;
+}
+
+.div-content>ul {
+	text-align: center;
+}
+
+#content-index {
+	margin: 0 20px;
+}
+
+
+#office {
+	background-image: url("images/office.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.56);
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+#coffee {
+	background-image: url("images/coffee.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.56);
+}
+
+#coffee > *, #office > * {
+	font-size: 1.5em;
+	font-weight: 900;
+	text-align: center;
+}
+
+#coffee > h2, #office > h2 {
+	font-size: 3em;
+}
+
+div>span {
+	color: yellow;
+}
+
+.bx-next {
+	margin-right: 1%;
+}
