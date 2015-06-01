@@ -2,27 +2,27 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.projects=[
         {
             url:'',
-            image:'css/images/ferrari.jpg'
+            image:'Portfolio/projects/Octo/css/images/ferrari.jpg'
         },
         {
             url:'',
-            image:'css/images/unilever.jpg'
+            image:'Portfolio/projects/Octo/css/images/unilever.jpg'
         },
         {
             url:'',
-            image:'css/images/apple.jpg'
+            image:'Portfolio/projects/Octo/css/images/apple.jpg'
         },
         {
             url:'',
-            image:'css/images/ferrari.jpg'
+            image:'Portfolio/projects/Octo/css/images/ferrari.jpg'
         },
         {
             url:'',
-            image:'css/images/unilever.jpg'
+            image:'Portfolio/projects/Octo/css/images/unilever.jpg'
         },
         {
             url:'',
-            image:'css/images/apple.jpg'
+            image:'Portfolio/projects/Octo/css/images/apple.jpg'
         }
       ]}
 ]);
