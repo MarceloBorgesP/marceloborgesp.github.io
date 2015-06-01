@@ -13,63 +13,31 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
 
 	<title>Octo Web</title>
 </head>
-<body onload="resize()">
+<body onload="resize()" ng-app="myApp">
 	<div class="wrapper">
 		<div id="hamburger-menu">
 			<button class="fa fa-bars fa-4x"></button>
 		</div>
 		<header class="animated fadeInDown"></header>
 	
-		<div class="content animated fadeIn row">
+		<div class="content animated fadeIn row" ng-controller="MainController">
 			<div class="description">
 					<h1>Esses são alguns de nossos trabalhos</h1>
 					<hr>
 			</div>
-			 <figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-			 	<a href="">
-				  <img src="css/images/ferrari.jpg" alt="Ferrari">
+
+			<div ng-repeat="project in projects">
+				 <figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+			 	<a href="/{{project.url}}" target="_blank">
+				  <img src="/{{project.image}}" alt="Ferrari">
 				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
-				  <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis suscipit tincidunt.</figcaption> -->
-				</a>
-			</figure> 
-			<figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-			 	<a href="">
-				  <img src="css/images/unilever.jpg" alt="Unilever">
-				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
-				  <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis suscipit tincidunt.</figcaption> -->
 				</a>
 			</figure>
-			<figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-			 	<a href="">
-				  <img src="css/images/apple.jpg" alt="Apple">
-				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
-				  <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis suscipit tincidunt.</figcaption> -->
-				</a>
-			</figure>
-			<figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-			 	<a href="">
-				  <img src="css/images/ferrari.jpg" alt="Ferrari">
-				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
-				  <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis suscipit tincidunt.</figcaption> -->
-				</a>
-			</figure>
-			<figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-			 	<a href="">
-				  <img src="css/images/unilever.jpg" alt="Unilever">
-				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
-				  <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis suscipit tincidunt.</figcaption> -->
-				</a>
-			</figure>
-			<figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-			 	<a href="">
-				  <img src="css/images/apple.jpg" alt="Apple">
-				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
-				  <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis suscipit tincidunt.</figcaption> -->
-				</a>
-			</figure>
+			</div>
 		</div>
 
 		<footer class="animated fadeInUp"></footer>
@@ -80,4 +48,6 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/resize.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/MainController.js"></script>
 </html>

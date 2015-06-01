@@ -68,14 +68,10 @@ a:hover {
 }
 
 .quem-somos {
-	display: none;
-}
-
-.quem-somos {
 	display: block;
 	top: 30px;
 	position: relative;
-	background-color: 	#665D5D;
+	background-color: #665D5D;
 	height: 120px;
 	width: 160px;
 	padding: 0;
@@ -394,6 +390,7 @@ h2 {
 		right: -189px;
 		position: relative;
 		text-align: center;
+		background-color: #261E1C;
 	}
 
 	.quem-somos li {
