@@ -30,8 +30,11 @@ var resize = function () {
     portfolioSize(20, 2.4 ,3);
   }
 
+  var octo = $('#octo_icon');
 
   if(windowsize < 1050) {
+
+        $('#octo_icon').remove();
 
         $('#menu-hamburger').css( "display" , "inherit" );
          $('#menu').css( "display" , "none" );
@@ -59,6 +62,7 @@ var resize = function () {
   }
 
   else if (windowsize >= 1050) {
+          $('#menu').prepend(octo);
 
           $('#hamburger-menu').css( "display" , "none" );
           $('#menu').css( "display" , "inherit" );

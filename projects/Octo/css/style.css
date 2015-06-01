@@ -36,7 +36,7 @@ hr {
     background-color: #FFFF00;
 }
 
-.content {
+.content, .info {
 	min-height: 100%;
 	margin: 0 auto;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -80,21 +80,27 @@ header {
     z-index: 99999;
 }
 
+#menu>nav {
+	top: 0px;
+	right: 13%;
+	position: absolute;
+}
+
 nav>ul {
-	display: inline-block;
 	float: right;
-	margin-right: 13%;
 	margin-top: 0px;
 }
 
-.li-header {
-	float: left;
-	list-style: none;
-	text-align: center;
+#octo_icon {
+	height: 120px;
+	margin: 2px 0 0 100px;
 }
 
 .li-header {
 	background-color: 	#665D5D;
+	float: left;
+	list-style: none;
+	text-align: center;
 	padding: 30px 0 0 0;
 	height: 130px;
 	width: 160px;
@@ -165,10 +171,6 @@ footer {
 	padding: 0 10px;
 }
 
-.div-contact>p {
-	font-weight: normal;
-}
-
 .div-contact>ul {
 	max-width: 350px;
 	margin: 0 auto;
@@ -189,6 +191,11 @@ h2 {
 	margin-bottom: 60px;
 	margin-right: 10px;
 	margin-left: 10px;
+}
+
+.info {
+	font-size: 1.2em;
+	line-height: 27px;
 }
 
 #facebook {
@@ -249,6 +256,22 @@ h2 {
 	    background-color: transparent;
 	}
 
+	#menu>nav {
+		top: 0px;
+		right: 0;
+		position: absolute;
+	}
+
+	#octo_icon {
+		height: 100px;
+		width: 100px;
+		margin: 0 auto;
+		position: relative;
+		top: -200px;
+		z-index: -1;
+		opacity: 0.9;
+	}
+
 	nav>ul {
 		height: 130px;
 		display: block;
@@ -265,6 +288,14 @@ h2 {
 		background-color: #261e1e;
 		text-align: left;
 	}
+
+	#li-octo {
+		background-image: url("images/octo2.png");
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		background-position: 130px 5px;
+	}
+
 
 	.quem-somos {
 		top: -33px;
@@ -297,7 +328,7 @@ h2 {
 
 	@media only screen and (max-width: 805px), only screen and (max-device-width: 805px) {
 		footer {
-			height: 650px;
+			height: 780px;
 		}
 
 		.description h1 {
@@ -320,7 +351,7 @@ h2 {
 
 			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
 				footer {
-					height: 730px;
+					height: 820px;
 				}
 
 				.div-content {
