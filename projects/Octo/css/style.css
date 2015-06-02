@@ -7,7 +7,8 @@ body, html, .wrapper, footer {
 }
 
 body {
-	background-image: url("images/yellow.gif");
+	/*background-image: url("images/yellow.gif");*/
+	background-color: #1C1C1C;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -20,6 +21,7 @@ h1 {
 	height: 40px;
 	text-align: center;
 	font-size: 3em;
+	color: #ffffff;
 }
 
 hr {
@@ -39,8 +41,11 @@ li {
 	list-style: none;
 }
 
-a:hover {
+a:hover:not(.a-header) {
 	color: #FFFFFF;
+}
+
+a:hover {
 	text-decoration: none;
 }
 
@@ -120,14 +125,14 @@ nav>ul {
 }
 
 #arrow {
-	color: #C242F4;
+	color: #665D5D;
 }
 
 .quem-somos {
 	display: block;
 	top: 0px;
 	position: relative;
-	background-color: #F0F0F0;
+	background-color: #ffffff;
 	height: 120px;
 	width: 160px;
 	padding: 0;
@@ -144,6 +149,8 @@ nav>ul {
 
 .quem-somos li:hover {
 	background-color: #C242F4;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .quem-somos a {
@@ -159,7 +166,7 @@ nav>ul {
 /* footer */
 
 footer {
-    background-color: #FFD500;
+    background-color: #1C1C1C;
     position: relative;
     bottom: 0px;
     padding: 10px 0 20px 5px;
@@ -206,13 +213,13 @@ footer h2 {
 	border-bottom-style: solid;
 	border-bottom-color: #ffffff;
 	font-weight: bold;
-	color: #665D5D;
+	color: #ffffff;
 }
 
 footer h3 {
 	font-weight: bold;
 	font-size: 2em;
-	color: #665D5D;
+	color: #ffffff;
 }
 
 
