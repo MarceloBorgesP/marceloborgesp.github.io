@@ -257,6 +257,10 @@ footer h2 {
 /* Adaptações para versão mobile */
 
 @media only screen and (max-width: 1050px), only screen and (max-device-width: 1050px) {
+	body {
+			background-size: 300%;
+	}
+
 	header {	
 	    width: 200px;
 	    height: 80%;
@@ -338,7 +342,7 @@ footer h2 {
 	}
 
 	@media only screen and (max-width: 805px), only screen and (max-device-width: 805px) {
-		.body {
+		body {
 			background-size: 400%;
 		}
 
@@ -365,8 +369,8 @@ footer h2 {
 			}
 
 			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
-				.body {
-						background-size: 1000%;
+				body {
+						background-size: 800%;
 				}
 
 				footer {
