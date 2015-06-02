@@ -7,7 +7,7 @@ body, html, .wrapper, footer {
 }
 
 body {
-	background-image: url("images/yellow.jpg");
+	background-image: url("images/yellow.gif");
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -272,10 +272,6 @@ footer h3 {
 /* Adaptações para versão mobile */
 
 @media only screen and (max-width: 1050px), only screen and (max-device-width: 1050px) {
-	body {
-			background-size: 300%;
-	}
-
 	header {	
 	    width: 200px;
 	    height: 80%;
@@ -367,10 +363,6 @@ footer h3 {
 	}
 
 	@media only screen and (max-width: 805px), only screen and (max-device-width: 805px) {
-		body {
-			background-size: 400%;
-		}
-
 		.description h1 {
 				font-size: 2.5em;
 			}
@@ -390,10 +382,6 @@ footer h3 {
 			}
 
 			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
-				body {
-						background-size: 800%;
-				}
-
 				.div-content {
 					height: 570px;
 				}
