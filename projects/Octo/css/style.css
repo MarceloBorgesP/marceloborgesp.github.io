@@ -1,5 +1,5 @@
 
-body, html, .wrapper {
+body, html, .wrapper, footer {
     	min-height: 100%;
     	width: 100%;
 		margin: 0px;
@@ -148,8 +148,8 @@ nav>ul {
 /* footer */
 
 footer {
-	width: 100%;
-	height: 330px;
+	max-width: 100%;
+	height: 630px;
     background-color: #494343;
     position: relative;
     bottom: 0px;
@@ -237,8 +237,10 @@ footer h2 {
 }
 
 #map-canvas {
-	width: 100%;
-	height: 160px;
+	padding-top: 30px;
+	margin: 0 auto;
+	max-width: 900px;
+	height: 300px;
 	background-color: #CCC;
 }
 
@@ -347,7 +349,7 @@ footer h2 {
 		}
 
 		footer {
-			height: 780px;
+			height: 930px;
 		}
 
 		.description h1 {
@@ -374,7 +376,7 @@ footer h2 {
 				}
 
 				footer {
-					height: 820px;
+					height: 1000px;
 				}
 
 				.div-content {
