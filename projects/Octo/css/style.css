@@ -148,18 +148,15 @@ nav>ul {
 /* footer */
 
 footer {
-	max-width: 100%;
-	height: 630px;
     background-color: #494343;
     position: relative;
     bottom: 0px;
-    padding: 10px 0 0 5px;
+    padding: 10px 0 20px 5px;
     color: #FFFFFF;
 	font-size: 0.9em;
 	font-weight	: 900;
 	float: left;
 	font-family: 'Dancing Script', cursive;
-
 }
 
 footer .row {
@@ -202,7 +199,7 @@ footer h2 {
 }
 
 .info {
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 20px;
 	font-family: 'Poiret One', cursive;
 	color: #E6F911;
@@ -348,10 +345,6 @@ footer h2 {
 			background-size: 400%;
 		}
 
-		footer {
-			height: 930px;
-		}
-
 		.description h1 {
 				font-size: 2.5em;
 			}
@@ -373,10 +366,6 @@ footer h2 {
 			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
 				body {
 						background-size: 800%;
-				}
-
-				footer {
-					height: 1000px;
 				}
 
 				.div-content {
