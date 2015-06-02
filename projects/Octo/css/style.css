@@ -1,15 +1,14 @@
+
 body, html, .wrapper {
-    	height: 100%;
     	min-height: 100%;
     	width: 100%;
 		margin: 0px;
 		padding: 0px;
-		overflow-x: hidden;
-
 }
 
-.wrapper {
-	background-image: url("images/background.jpg");
+body {
+	background-image: url("images/purple.jpg");
+	background-size: 250%;
 }
 
 .description {
@@ -161,6 +160,10 @@ footer {
 	float: left;
 	font-family: 'Dancing Script', cursive;
 
+}
+
+footer .row {
+	margin: 0;
 }
 
 .div-contact {
@@ -335,6 +338,10 @@ footer h2 {
 	}
 
 	@media only screen and (max-width: 805px), only screen and (max-device-width: 805px) {
+		.body {
+			background-size: 400%;
+		}
+
 		footer {
 			height: 780px;
 		}
@@ -358,6 +365,10 @@ footer h2 {
 			}
 
 			@media only screen and (max-width: 605px), only screen and (max-device-width: 605px) {
+				.body {
+						background-size: 1000%;
+				}
+
 				footer {
 					height: 820px;
 				}
