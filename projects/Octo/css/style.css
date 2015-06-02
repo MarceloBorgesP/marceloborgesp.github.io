@@ -166,7 +166,8 @@ nav>ul {
 /* footer */
 
 footer {
-    background-color: #1C1C1C;
+    /*background-color: #1C1C1C;*/
+    background-image: url("images/black.jpg");
     position: relative;
     bottom: 0px;
     padding: 10px 0 20px 5px;
@@ -220,6 +221,7 @@ footer h3 {
 	font-weight: bold;
 	font-size: 2em;
 	color: #ffffff;
+	line-height: 40px;
 }
 
 
