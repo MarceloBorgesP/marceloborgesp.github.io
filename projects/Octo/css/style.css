@@ -8,7 +8,7 @@ body, html, .wrapper, footer {
 
 body {
 	background-image: url("images/yellow.jpg");
-	background-size: 250%;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .description {
@@ -26,14 +26,13 @@ hr {
 	border: 0;
 	width: 30%;
     height: 3px;
-    color: #FFFF00;
-    background-color: #FFFF00;
+    color: #C242F4;
+    background-color: #C242F4;
 }
 
 .content {
 	min-height: 100%;
 	margin: 0 auto;
-	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 li {
@@ -45,7 +44,7 @@ a:hover {
 	text-decoration: none;
 }
 
-a, #arrow {
+a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -67,9 +66,7 @@ button {
 /*header */
 
 header {
-	font-family: 'Anton', sans-serif;
     width: 100%;
-    height: 130px;
     background-color: transparent;
     position: relative;
     z-index: 99999;
@@ -92,19 +89,14 @@ nav>ul {
 }
 
 .li-header {
-	background-color: 	#665D5D;
+	background-color: #FFFFFF;
 	float: left;
 	list-style: none;
 	text-align: center;
-	padding: 30px 0 0 0;
-	height: 130px;
+	height: 70px;
 	width: 160px;
-	border-color: #494343;
-	border-left-width: 1px;
-	border-right: 0px;
-	border-top: 0px;
-	border-bottom: 0px;
-	border-style: solid;
+	border-width: 0;
+	font-family: 'Anton', sans-serif;
 	-webkit-transition: border 0.3s ease-in-out;
 	-moz-transition: border 0.3s ease-in-out;
 	-ms-transition: border 0.3s ease-in-out;
@@ -113,42 +105,61 @@ nav>ul {
 }
 
 .li-header:hover {
-	border-color: #E6F911;
+	border-color: #C242F4;
 	border-bottom-width: 6px;
 	border-style: solid;
-	border-left-color: #494343;
 	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
+}
+
+#li-octo {
+	border-bottom-left-radius: 10px;
+}
+
+#li-contact {
+	border-bottom-right-radius: 10px;
+}
+
+#arrow {
+	color: #C242F4;
 }
 
 .quem-somos {
 	display: block;
-	top: 30px;
+	top: 0px;
 	position: relative;
-	background-color: #665D5D;
+	background-color: #F0F0F0;
 	height: 120px;
 	width: 160px;
 	padding: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .quem-somos li{
 	height: 40px;
 	font-size: 1.4em;
 	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .quem-somos li:hover {
-	background-color: #E6F911;
+	background-color: #C242F4;
+}
+
+.quem-somos a {
+	color: #665D5D;
 }
 
 .a-header {
 	height: 100px;
 	font-size: 2em;
+	color: #665D5D;
 }
 
 /* footer */
 
 footer {
-    background-color: #494343;
+    background-color: #131313;
     position: relative;
     bottom: 0px;
     padding: 10px 0 20px 5px;
@@ -156,7 +167,6 @@ footer {
 	font-size: 0.9em;
 	font-weight	: 900;
 	float: left;
-	font-family: 'Dancing Script', cursive;
 }
 
 footer .row {
@@ -170,7 +180,6 @@ footer .row {
 }
 
 .div-contact>ul {
-	max-width: 350px;
 	margin: 0 auto;
 }
 
@@ -195,14 +204,22 @@ h2 {
 footer h2 {
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
-	border-bottom-color: #E6F911;
+	border-bottom-color: #C242F4;
+	font-weight: bold;
+	color: #CCCCCC;
 }
+
+footer h3 {
+	font-weight: bold;
+	font-size: 2em;
+	color: #CCCCCC;
+}
+
 
 .info {
 	font-size: 1.2em;
 	line-height: 20px;
-	font-family: 'Poiret One', cursive;
-	color: #E6F911;
+	letter-spacing: 1px;
 }
 
 #facebook {
@@ -234,7 +251,6 @@ footer h2 {
 }
 
 #map-canvas {
-	padding-top: 30px;
 	margin: 0 auto;
 	max-width: 900px;
 	height: 300px;
@@ -303,20 +319,30 @@ footer h2 {
 		text-align: left;
 	}
 
+	.li-header:hover {
+		border-width: 0;
+	}
+
+	.a-header {
+		color: #ffffff;
+	}
+
 	#li-octo {
 		background-image: url("images/octo2.png");
 		background-size: 50px 50px;
 		background-repeat: no-repeat;
 		background-position: 130px 5px;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 10px;
 	}
-
 
 	.quem-somos {
 		top: -33px;
 		right: -189px;
 		position: relative;
 		text-align: center;
-		background-color: #261E1C;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
 	}
 
 	.quem-somos li {
