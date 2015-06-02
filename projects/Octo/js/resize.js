@@ -10,8 +10,8 @@ var resize = function () {
       $('.span-hover').css( "width" , (-margin+windowsize)/widthsize );
       $('.span-hover').css( "height" , 1+(-margin+windowsize)/heightsize );
       $('.span-hover').css( "top" , -((-margin+windowsize)/heightsize) );
-      $('img').css( "width" , (-margin+windowsize)/widthsize );
-      $('img').css( "height" , (-margin+windowsize)/heightsize );
+      $('.img-portfolio').css( "width" , (-margin+windowsize)/widthsize );
+      $('.img-portfolio').css( "height" , (-margin+windowsize)/heightsize ); //problema aqui
   };
 
   if (windowsize >= 1200) {
@@ -30,11 +30,7 @@ var resize = function () {
     portfolioSize(20, 2.4 ,3);
   }
 
-  var octo = $('#octo_icon');
-
   if(windowsize < 1050) {
-
-        $('#octo_icon').remove();
 
         $('#menu-hamburger').css( "display" , "inherit" );
          $('#menu').css( "display" , "none" );
@@ -62,7 +58,6 @@ var resize = function () {
   }
 
   else if (windowsize >= 1050) {
-          $('#menu').prepend(octo);
 
           $('#hamburger-menu').css( "display" , "none" );
           $('#menu').css( "display" , "inherit" );
