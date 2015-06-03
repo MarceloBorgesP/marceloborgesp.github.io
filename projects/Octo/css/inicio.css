@@ -48,6 +48,11 @@ div>span {
 	color: yellow;
 }
 
-.bx-next {
-	margin-right: 1%;
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0;
+    -webkit-box-shadow: 0;
+    box-shadow: 0 0 0 0;
+    border: 0;
+    left: 0;
+    background: #fff;
 }

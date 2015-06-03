@@ -32,7 +32,7 @@ var resize = function () {
 
   if(windowsize < 1050) {
 
-        $('#menu-hamburger').css( "display" , "inherit" );
+        // $('#menu-hamburger').css( "display" , "inherit" );
          $('#menu').css( "display" , "none" );
          $('header').css( "height" , "0" );
 
@@ -59,7 +59,7 @@ var resize = function () {
 
   else if (windowsize >= 1050) {
 
-          $('#hamburger-menu').css( "display" , "none" );
+          // $('#hamburger-menu').css( "display" , "none" );
           $('#menu').css( "display" , "inherit" );
           $('header').css( "height" , "130" );
   };
