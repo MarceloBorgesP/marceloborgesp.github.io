@@ -8,7 +8,7 @@ function initialize() {
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
-  var pos = new google.maps.LatLng(-22.223272, -45.921564);, 
+  var pos = new google.maps.LatLng(-22.223272, -45.921564);
   var marker = new google.maps.Marker({
     position: pos,
     map: map,
