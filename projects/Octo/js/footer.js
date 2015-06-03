@@ -18,4 +18,15 @@ function initialize() {
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
+function getYear () {
+  var d = new Date();
+  var n = d.getFullYear();
+
+  $('#year').text(n);//.innerHTML = '' + n;
+  //document.getElementById('year').innerHTML = '' + n;
+};
+
+getYear();
+
+
   
