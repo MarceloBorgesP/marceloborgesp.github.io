@@ -89,8 +89,8 @@ nav>ul {
 }
 
 #octo_icon {
-	height: 100px;
-	margin: 15px 0 0 40px;
+	height: 60px;
+	margin: 15px 0 0 90px;
 }
 
 .li-header {
@@ -111,7 +111,7 @@ nav>ul {
 
 .li-header:hover {
 	/*border-color: #FFFF00;*/
-	border-color: #C242F4;
+	border-color: yellow;
 	border-bottom-width: 6px;
 	border-style: solid;
 }
@@ -187,8 +187,12 @@ footer .row {
 
 .div-contact {
 	text-align: center;
-	margin: 0px;
+	margin-bottom: 50px;
 	padding: 0 5px;
+}
+
+.div-contact * {
+	text-align: center;
 }
 
 .div-contact>ul {
@@ -232,10 +236,10 @@ footer h3 {
 	line-height: 40px;
 }
 
-
 .info {
 	font-size: 1.4em;
 	line-height: 20px;
+	text-align: center;
 }
 
 #facebook {

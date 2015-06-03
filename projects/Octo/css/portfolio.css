@@ -6,7 +6,7 @@ figure {
 }
 
 #overlay .span-hover {
-    background-color: #C242F4;
+    background-color: yellow;
     display: block;
     opacity: 0;
     position: relative;
