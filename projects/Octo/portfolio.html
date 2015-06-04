@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="css/images/octo.png">
+
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+
+	<title>Octo</title>
+</head>
+<body onload="resize()" ng-app="myApp">
+	<div class="wrapper">
+		<div id="hamburger-menu">
+			<button class="fa fa-bars fa-4x"></button>
+		</div>
+		<header class="animated fadeInDown"></header>
+	
+		<div class="content animated fadeIn row" ng-controller="MainController">
+			<div class="description">
+					<h1>Esses são alguns de nossos trabalhos</h1>
+					<hr>
+			</div>
+
+			<div ng-repeat="project in projects">
+				 <figure id="overlay" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+			 	<a href="/{{project.url}}" target="_blank">
+				  <img class="img-portfolio" src="/{{project.image}}" alt="{{project.alt}}">
+				  <span class="span-hover"><span class="fa fa-search fa-3x"></span><p>Saiba mais sobre esse projeto</p></span>
+				</a>
+			</figure>
+			</div>
+		</div>
+
+		<footer class="animated fadeInUp"></footer>
+		
+	</div>
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/resize.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/MainController.js"></script>
+</html>

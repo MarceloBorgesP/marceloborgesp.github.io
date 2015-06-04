@@ -1,0 +1,35 @@
+app.controller('MainController', ['$scope', function($scope) { 
+  $scope.projects=[
+        {
+            url:'',
+            image:'Portfolio/projects/Octo/css/images/ferrari.jpg',
+            alt:'Ferrari'
+        },
+        {
+            url:'',
+            image:'Portfolio/projects/Octo/css/images/unilever.jpg',
+            alt:'Unilever'
+        },
+        {
+            url:'',
+            image:'Portfolio/projects/Octo/css/images/apple.jpg',
+            alt:'Apple'
+        },
+        {
+            url:'',
+            image:'Portfolio/projects/Octo/css/images/ferrari.jpg',
+            alt:'Ferrari'
+        },
+        {
+            url:'',
+            image:'Portfolio/projects/Octo/css/images/unilever.jpg',
+            alt:'Unilever'
+        },
+        {
+            url:'',
+            image:'Portfolio/projects/Octo/css/images/apple.jpg',
+            alt:'Apple'
+        }
+      ]}
+]);
+

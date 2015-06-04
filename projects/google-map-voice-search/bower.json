@@ -1,0 +1,31 @@
+{
+  "name": "my-element",
+  "version": "0.0.0",
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "google-map": "GoogleWebComponents/google-map",
+    "polymer-ui-card": "PolymerLabs/polymer-ui-card",
+    "core-ajax": "Polymer/core-ajax",
+    "gplus-button": "robdodson/gplus-button#master",
+    "google-map-streetview-panorama": "robdodson/google-map-streetview-panorama"
+  },
+  "resolutions": {
+    "polymer": "master",
+    "platform": "~0.2.0",
+    "core-component-page": "master",
+    "core-actions-icons": "master",
+    "webcomponentsjs": "0.5.5"
+  },
+  "authors": [
+    "MarceloBorgesP <borgespereira.marcelo@gmail.com>"
+  ],
+  "main": "my-element.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT"
+}
