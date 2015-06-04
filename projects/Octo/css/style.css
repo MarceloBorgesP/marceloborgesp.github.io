@@ -148,13 +148,17 @@ nav>ul {
 }
 
 .quem-somos li:hover {
-	background-color: #C242F4;
+	background-color: yellow;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 
 .quem-somos a {
 	color: #665D5D;
+}
+
+.quem-somos a:hover {
+	color: #000000;
 }
 
 .a-header {

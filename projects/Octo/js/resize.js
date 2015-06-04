@@ -61,7 +61,7 @@ var resize = function () {
 
           // $('#hamburger-menu').css( "display" , "none" );
           $('#menu').css( "display" , "inherit" );
-          $('header').css( "height" , "130" );
+          $('header').css( "height" , "100" );
   };
 };
 
